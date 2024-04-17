@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <h1 align="center">Nous lançons une grande enquete sur les anciens stagiaires</h1>
+    <p align="center">Merci de nous répondre</p>
+
+    <form method="get" action="http://www.afpa.fr">
+        <p> 
+            <input type="text" name="prenom" required autofocus autocomplete="name"> Votre Prénom 
+        </p>
+        <p> 
+            <input type="text" name="nom" required  autocomplete="family-name"> Votre Nom 
+        </p>
+        <p> 
+            <input type="date" name="bday" required  autocomplete="bday-day"> Votre Date de naissance 
+        </p>
+        <p> 
+            <input type="text" name="adresse" pattern="[0,9]+[a-z]"  autocomplete="address-level1"> Votre Adresse 
+        </p>
+        <p> 
+            <input type="text" name="city"> Votre Ville 
+        </p>
+        <p> 
+            <input type="number" name="codepostal" required  autocomplete="postal-code" pattern="[0-9]"> Votre Code postal 
+        </p>
+        <p> 
+            <input type="email" name="mail" required  autocomplete="email" > Votre Code postal
+        </p>
+        <input type="radio" name="Y" value="Y" checked>Vous etes un homme
+        <input type="radio" name="x" value="X"> Vous etes une femme
+        <br>
+        <select name="metier" id="" required>
+            <option value="Developpeur" selected="selected">Developpeur</option>
+            <option value="Analyste" >Analyste</option>
+            <option value="Chef de Projet" >Chef de Projet</option>
+            <option value="Autre" >Autre</option>
+        </select>
+        <br>
+        <input type="text" name="Autre" ><span> Si vous avez répondu autre, précisez</span>
+        <br/>
+        <br/>
+        <select name="paye" required>
+            <option value="1k" selected="selected">&lt; 1000 &euro;</option>
+            <option value="1.5k" >&gt; 1000 &euro; et 1500 &euro;</option>
+            <option value="2k" >&gt; 1500 &euro; et 2000 &euro;</option>
+            <option value="plus" >&gt; 2000 &euro;</option>
+        </select>
+        <br>
+        <input type="number" name="year2" pattern="[aaaa]" min="1920" max="2024" placeholder="Année"/> En quelle année avez vous rejoins l'AFPA.
+        <br>
+        <br>
+        <textarea name="" id="" cols="25" rows="5" placeholder="Vos commentaires"></textarea>
+        <br>
+        <br>
+        <b>Merci d'avoir répondu au questionnaire</b>
+        <br>
+        <br>
+        <input type="submit" value="Validez" />
+        <input type="submit" value="Annulez" />
+    </form>
+        
+    
+</body>
+</html>

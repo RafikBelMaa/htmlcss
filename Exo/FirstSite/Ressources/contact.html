@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <ul><img src="./SiteDWWM/Images/logo.jpeg" alt=""/>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formation.html">La  formation</a></li>
+        <li><a href="temoignage.html">Ils temoignent</a></li>
+        <li><a href="references.html">Nos References</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+</head>
+<body>
+    <h1>Contactez nous</h1>
+    <form  method="get">
+        Prénom nom <input type="text" name="name"><br>
+        Votre adresse mail <input type="email" name="mail" placeholder="monadresse@gmail.com"><br>
+        Votre telephone <input type="tel" name="" pattern="[0-9]{2}-[0-9]{8}" placeholder=" 06 07 08 90 10">
+        <br>Vous êtes <br>
+            <input type="radio" name="anpe" checked > Demandeur d'emploi <br>
+            <input type="radio" name="cdi" > Salarié en transition pro <br>
+            <input type="radio" name="autre" > Autre <br>
+        Vos modalités pédagogiques préferées <br>
+            <input type="radio" name="pre" checked > Formation en présentielle <br>
+            <input type="radio" name="teletravail" > 100 % Distance <br>
+            <input type="radio" name="khadem" > Alternance <br>
+            <input type="radio" name="chomeur" > Pas de préference <br>
+        Vous êtes résident de la région <select name="region" required aria-placeholder="region"> <label for="région">Choisisez</label>
+            <option value="1k">&lt; 1000 &euro;</option>
+            <option value="1.5k" >&gt; 1000 &euro; et 1500 &euro;</option>
+            <option value="2k" >&gt; 1500 &euro; et 2000 &euro;</option>
+            <option value="plus" >&gt; 2000 &euro;</option>
+        </select>
+        <br>
+        Votre message <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+        <br>
+        <input type="submit" value="Validez" />
+        </form>
+</body>
+</html>
